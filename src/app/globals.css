@@ -31,3 +31,46 @@ body {
     text-wrap: balance;
   }
 }
+
+.navbar-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Change this to the desired underline color */
+  transition: width 0.3s ease-out; /* Adjust the transition duration as needed */
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Layout.module.css */
+.transitioning {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Adjust the transition duration and easing as needed */
+}
+
+/* Define custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0c5a6d; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009dff; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners of the handle */
+}

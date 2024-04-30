@@ -1,0 +1,5 @@
+/* Layout.module.css */
+.transitioning {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Adjust the transition duration and easing as needed */
+}
